@@ -64,7 +64,9 @@ uvicorn main:app --reload --host 127.0.0.1 --port 8000
 Request:
 ```bash
 curl -s "http://127.0.0.1:8000/events"
+```
 
+```bash
 Example response:
 {
   "year": 2024,
@@ -81,7 +83,9 @@ Example response:
 Request:
 ```bash
 curl -s "http://127.0.0.1:8000/fastest-lap?year=2024&race=monza"
+```
 
+```bash
 Example response:
 {
   "year": 2024,
