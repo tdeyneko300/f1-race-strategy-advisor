@@ -30,7 +30,7 @@ API-сервис (FastAPI) для работы с данными F1 и выда�
 
 ## Getting started
 
-### 1) Clone
+### Clone
 ```bash
 git clone <REPO_URL>
 cd f1-race-strategy-advisor
@@ -42,3 +42,9 @@ pip install -r requirements.txt
 
 # Run locally
 uvicorn main:app --reload --host 127.0.0.1 --port 8000
+
+
+##№ API docs
+После запуска сервера открой:
+- Swagger UI: http://127.0.0.1:8000/docs
+- OpenAPI JSON: http://127.0.0.1:8000/openapi.json
