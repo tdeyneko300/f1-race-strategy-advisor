@@ -14,10 +14,15 @@ API-сервис (FastAPI) для работы с данными F1 и выда�
 
 ## Project structure
 ├── main.py
+
 ├── requirements.txt
+
 ├── README.md
+
 ├── LICENSE
-├── data/ # локальный датасет (не хранится в репозитории)
+
+├── data/ 
+
 └── cache/ # локальный кэш (не хранится в репозитории)
 
 ## Getting started
