@@ -66,8 +66,8 @@ Request:
 curl -s "http://127.0.0.1:8000/events"
 ```
 
-```bash
 Example response:
+```bash
 {
   "year": 2024,
   "events": [
@@ -85,8 +85,8 @@ Request:
 curl -s "http://127.0.0.1:8000/fastest-lap?year=2024&race=monza"
 ```
 
-```bash
 Example response:
+```bash
 {
   "year": 2024,
   "race": "monza",
