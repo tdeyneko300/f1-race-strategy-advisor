@@ -82,7 +82,7 @@ Example response:
 
 Request:
 ```bash
-curl -s "http://127.0.0.1:8000/fastest-lap-dataset?year=2024&race=monza"
+curl -s "http://127.0.0.1:8000/fastest-lap-dataset?year=2024&round=1"
 ```
 
 Example response:
