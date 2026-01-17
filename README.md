@@ -16,6 +16,7 @@ API-сервис (FastAPI) для работы с данными F1 и выда�
 - Uvicorn
 
 ## Project structure
+```
 ├── main.py
 
 ├── requirements.txt
@@ -27,6 +28,7 @@ API-сервис (FastAPI) для работы с данными F1 и выда�
 ├── data/ (races.csv, drivers.csv, lap_times.csv, results.csv, constructors.csv)
 
 └── cache/ # локальный кэш (не хранится в репозитории)
+```
 
 ## Getting started
 
