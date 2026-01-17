@@ -18,3 +18,21 @@ def events(year: int = 2024):
     cols = ["RoundNumber", "EventName", "Country", "Location"]
     result = schedule[cols].to_dict(orient="records")
     return {"year": year, "events": result}
+
+@app.get("/drivers")
+def drivers(year: int = 2024, round: int = 1, session: str = "R"):
+    s = fastf1.get_session(year, round, session)
+    s.load(telemetry=False, laps=False, weather=False)
+
+    # Берём результаты сессии — там есть имена и команды
+    df = s.results[["DriverNumber", "Abbreviation", "FullName", "TeamName"]]
+
+    drivers_out = df.to_dict(orient="records")
+
+    return {
+        "year": year,
+        "round": round,
+        "session": session,
+        "drivers": drivers_out
+    }
+
