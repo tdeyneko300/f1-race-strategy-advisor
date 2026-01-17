@@ -42,9 +42,8 @@ pip install -r requirements.txt
 
 # Run locally
 uvicorn main:app --reload --host 127.0.0.1 --port 8000
-
-
-##№ API docs
-После запуска сервера открой:
+```
+## API docs
+После запуска сервера:
 - Swagger UI: http://127.0.0.1:8000/docs
 - OpenAPI JSON: http://127.0.0.1:8000/openapi.json
